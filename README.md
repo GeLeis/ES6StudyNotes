@@ -53,3 +53,27 @@ var name = "Bob", time = "today";
 7.[正则表达式](http://www.runoob.com/regexp/regexp-syntax.html)
 
 8.javascript中整数和浮点数是相同的存储方式，3和3.0被视为同一个值
+
+9.copyWithin 用语数组替换元素
+
+10.fill,数组用语填充元素，第二个第三个元素指定填充的起止位置
+
+11.for of 遍历键值对
+```js
+for (let [index, elem] of ['a', 'b'].entries()) {
+  console.log(index, elem);
+}
+// 0 "a"
+// 1 "b"
+```
+
+12.函数中的参数默认是声明的，在函数体中不能用let const 声明和参数一样的参数
+```js
+function foo(x = 5) {
+  let x = 1; // error
+  const x = 2; // error
+}
+```
+
+13.函数的length属性返回没有指定默认值的参数个数
+
